@@ -31,16 +31,15 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    //button on click action
 public void  onButtonClick(View v){
     EditText principal = (EditText)findViewById(R.id.principaltxtID);
     EditText time = (EditText)findViewById(R.id.timetxtID);
     EditText rate = (EditText)findViewById(R.id.ratetxtID);
     TextView display = (TextView)findViewById(R.id.resultTxtViewID);
-    //int p = Integer.parseInt(principal.getText().toString());
-    //int t = Integer.parseInt(time.getText().toString());
-    //int r = Integer.parseInt(rate.getText().toString());
-    //int si= (p*t*r)/100;
 
+    //if any of value from textfield is empty then show toast
     if (principal.getText().toString().matches("") || (time.getText().toString().matches("")) || (rate.getText().toString().matches(""))){
 
         Toast.makeText(this, "Please fill all values.", Toast.LENGTH_SHORT).show();
@@ -51,13 +50,11 @@ public void  onButtonClick(View v){
         float p = Float.valueOf(principal.getText().toString());
         float t = Float.valueOf(time.getText().toString());
         float r = Float.valueOf(rate.getText().toString());
+        //SI Formula
         float si = (p*t*r)/100;
         display.setText(Float.toString(si));
 
     }
-
-
-    //display.setText(Integer.toString(si));
 
 }
     @Override
