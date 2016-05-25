@@ -66,8 +66,8 @@
         android:layout_below="@+id/timetxtID"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:hint="Rate" />
+        android:hint="Rate"
+        android:layout_alignRight="@+id/timetxtID"
+        android:layout_alignEnd="@+id/timetxtID" />
 
 </RelativeLayout>
