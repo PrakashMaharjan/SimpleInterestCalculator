@@ -1,9 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 33
-    buildToolsVersion "30.0.3"
+    //compileSdkVersion 33
+    //buildToolsVersion "30.0.3"
     defaultConfig {
+        compileSdk 33
+        buildToolsVersion = "30.0.3"
         applicationId "com.example.prakashmaharjan.simpleinterestcalculator"
         minSdkVersion 16
         targetSdkVersion 33
